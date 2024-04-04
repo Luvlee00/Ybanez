@@ -1,0 +1,199 @@
+/* front */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/nana.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img.Lotuslogo {
+    width: 60px;
+    margin: 0 0 0 110px; /* Adjust margin for smaller screens */
+}
+
+.navbar a.title1 {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px; /* Adjust this value to move the content to the left */
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.navbar ul li {
+    position: relative;
+    margin-right: 10px; /* Adjust margin for smaller screens */
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item on smaller screens */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 14px 10px; /* Adjust padding for smaller screens */
+    display: block;
+}
+.navbar ul li:hover > a {
+    background-color: white ;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.navbar:hover .content {
+    display: none;
+}
+
+.content img.CDLogo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content img.Lotuslogo {
+    width: 100px;
+    display: block;
+}
+
+.content h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn #noAuthorizationButton {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(224, 222, 222, 0.4);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn #withAuthorizationButton {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(224, 222, 222, 0.4);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#withAuthorizationButton #withAuthorizationSpan {
+    background: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#noAuthorizationButton #noAuthorizationSpan {
+    background: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#withAuthorizationButton:hover #withAuthorizationSpan {
+    width: 100%;
+}
+
+#noAuthorizationButton:hover #noAuthorizationSpan {
+    width: 100%;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    top: 100%;
+    margin: 20px 0 0 0;
+    padding: 22px;
+    text-align: center;
+    position: sticky;
+}
+.footer-links {
+    color: black;
+    font-family: 'Tahoma';
+    font-size: 12px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
